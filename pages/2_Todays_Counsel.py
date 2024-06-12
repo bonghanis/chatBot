@@ -1,10 +1,12 @@
 import streamlit as st
+import os
+
 from langchain_openai import ChatOpenAI
+from langchain_community.callbacks import get_openai_callback
 from openai import OpenAIError
 from datetime import datetime
-import os
+
 from my_modules import modelName, view_sourcecode
-from langchain_community.callbacks import get_openai_callback
 # from ai_sidebar_content import Todays_Counsel
 
 # Function to interact with OpenAI API

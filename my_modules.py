@@ -21,3 +21,9 @@ def view_sourcecode(fileName):
 
     if st.session_state.show_source_code:
         display_source_code(fileName)
+
+def modelName_embedding_small():
+    return "text-embedding-3-small"
+
+def modelName4o():
+    return "gpt-3.5-turbo-0125"
